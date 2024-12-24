@@ -10,8 +10,6 @@ public class Application extends SpringBootServletInitializer {
 	
 	public static void main(String[] args) throws Exception {
 		
-		// 환경변수 확인하려면 주석 풀기
-		// secrets.forEach((key, val) -> System.out.println("Loaded secret: " + key + " = " + val));
 		System.setProperty("server.servlet.context-path", "/");
 		SpringApplication.run(Application.class, args);
 		
